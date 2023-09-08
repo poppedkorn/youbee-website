@@ -1,0 +1,44 @@
+ul {
+    list-style: none;
+    
+  }
+
+  li {
+    margin: 48px 0;
+    font-size:x-large;
+  }
+
+  .map-page {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    height: calc(100% - 180px);
+    width:100%;
+    /* background-color: yellow; */
+    align-items: flex-end;
+  }
+
+  .store-locator-list {
+    display:flex;
+    flex:1;
+    background-color: #dedede;
+    /* height: 100%; */
+    /* width: 30%; */
+    margin-right: 0px;
+    flex-direction: column;
+  }
+
+  .map-pic {
+    display:flex;
+    flex:3;
+    justify-content: space-around;
+    align-self: center;
+  }
+
+
+  .find {
+    display:flex;
+    text-align: center;
+    align-content: center;
+    align-self: center;
+  }

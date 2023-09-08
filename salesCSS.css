@@ -1,0 +1,29 @@
+#specials-root {
+    height:100%;
+    /* width:100%; */
+    display:flex;
+    flex-direction: column;
+    /* background-color: yellow; */
+    }
+    
+#sales-text {
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    }
+    
+.row-pictures {
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    height:100%;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    margin-top: 30px;
+    }
+    
+img {
+    height:450px;
+    width:400px;
+}

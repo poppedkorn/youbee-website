@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>The Warehouse</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="C:\Users\popkorn\Desktop\Assessment cs1.2\AssessmentCSS.cs102.CSS">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="C:\Users\popkorn\Desktop\Assessment cs1.2\CartCSS.css">
+        <script src="C:\Users\popkorn\Desktop\Assessment cs1.2\AssessmentJavaScript.cs102.js"></script>
+    </head>
+    <body>
+            
+      <div id="myNav" class="overlay">
+
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      
+        <!-- Overlay content -->
+        <div class="overlay-content">
+          <a href="#">Fathers Day Sales</a>
+          <a href="#">Clothing & Accesories</a>
+          <a href="#">Home & Appliances</a>
+          <a href="#">Garden</a>
+          <a href="#">Food & Snacks</a>
+          <a href="#">Toys</a>
+          <a href="#">Health & Beauty</a>
+          <a href="#">Stationary</a>
+          <a href="#">Sports & Outdoors</a>
+          <a href="#">Auto & DIY</a>
+          <a href="#">Electronics</a>
+          <a href="#">Specials</a>
+          <a href="#">Online Only</a>
+        </div>
+      </div>
+
+    <div class="cart-root">
+        <div id="loginPage" class="overlay_login">
+
+            <a href="javascript:void(0)" class="closebtn_login" onclick="closeLogin()">&times;</a>
+
+            <div class="overlayContentLogin">
+
+            <a class="login-container">
+                Username or Email
+                <input class="sign-in" type="email">
+            </a>
+            <a class="login-container">
+                Password
+                <input class="sign-in" type="password">
+                </a>
+                <Button class="login-btn">Login</Button>
+            </div>
+        </div>
+
+            <div class="navigation-bar">
+
+                <a class="tab" href="#menu" onclick="openNav()" style="padding-left: 25px;">
+                <div class="fa" style="font-size: 48px;">&#xf0c9;</div>
+                </a>
+            
+                <a class="home2" href="C:\Users\popkorn\Desktop\Assessment cs1.2\Assessment.cs102.html">
+                <img src="C:\Users\popkorn\Desktop\Assessment cs1.2\Photos\Logo.JPG" alt="Warehouse Logo">
+                </a>
+
+                <a class="search-container">
+                <button class="submit_thing">Search</button>
+                <input class="input-search2" type="search">
+                </a>
+
+                <div class="outer-container2">
+
+                    <div class="icon-title-container2">
+                        <div class="fa-container">
+                          <a class="fa" style="font-size: 48px" href="C:\Users\popkorn\Desktop\Assessment cs1.2\Navigation.html">&#xf041;</a>
+                        </div>
+                        <div class="tab-text-container">
+                          <a class="tab-text2" href="C:\Users\popkorn\Desktop\Assessment cs1.2\Navigation.html"><b>Stores</b></a>
+                        </div>
+                      </div>
+                
+                <div class="icon-title-container2">
+                    <div class="fa-container">
+                    <a class="fa" style="font-size: 48px" href="#Sign-in" onclick="openLogin()">&#xf007;</a>
+                    </div>
+                    <div class="tab-text-container">
+                    <a class="tab-text2" href="#Sign-in" onclick="openLogin()"><b>Sign in</b></a>
+                    </div>
+                </div>
+                
+                <div class="icon-title-container2">
+                    <div class="fa-container">
+                    <a class="fa" style="font-size: 48px" href="C:\Users\popkorn\Desktop\Assessment cs1.2\Cart.HTML">&#xf07a;</a> 
+                    </div>
+                    <div class="tab-text-container">
+                    <a class="tab-text2" href="C:\Users\popkorn\Desktop\Assessment cs1.2\Cart.HTML"><b>Cart</b></a>
+                    </div>
+                </div>
+                
+                <div class="icon-title-container2"> 
+                    <div class="fa-container">
+                    <a class="fa" style="font-size: 48px" href="C:\Users\popkorn\Desktop\Assessment cs1.2\Help.HTML">&#xf29c;</a>
+                    </div>
+                    <div class="tab-text-container">
+                    <a class="tab-text2" href="C:\Users\popkorn\Desktop\Assessment cs1.2\Help.HTML"><b>Help</b></a>
+                    </div>
+                </div> 
+
+                </div>
+
+                <a class="empty-space2"></a>
+
+            </div>
+
+            <a class="topnav-botbar"></a>
+
+            <div class="cart-page">
+                <div class="product-cart-container">
+                    <div class="left-section">
+                        <!-- <div class="product-image-container"> -->
+                        <img class="product-image"
+                            src="C:\Users\popkorn\Desktop\Assessment cs1.2\Photos\categ6.JPEG" 
+                            href="#product"
+                            alt="clothing">
+                        <!-- </div> -->
+                    </div>
+                    <div class="right-section">
+                        <div class="product-title-price">
+                            <h2 href="#product">
+                                Torpedo Women's Puffer Jacket L
+                            </h2>
+                            <h3>
+                                $150.87
+                            </h3>
+                        </div>
+
+                        <div class="bottom-row">
+                            <div class="sold-and-shipped">
+                                <i>Sold and Shipped by The Warehouse</i>
+                            </div>
+                            <div class="quantity-buttons">
+                                <button class="plus-minus-btn" id="minus-button" onclick="decrement()">-</button>
+                                <input value="1" step="1" type="number" class="number-hold" id="number-hold">
+                                <button class="plus-minus-btn" id="plus-button" onclick="increment()">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <script>
+                    function increment() {
+                        document.getElementById('number-hold').stepUp();
+                    }
+                    function decrement() {
+                        if (document.getElementById('number-hold').value == 1) {
+                            return
+                        }
+                        document.getElementById('number-hold').stepDown();
+                    }
+                 </script>
+                <div class="cart-container">
+                    <div class="cart-container-top">
+                        <div class="cart-container-top-upper">
+                            <div class="check"><input type="checkbox"></div>
+                            <div class="cart-container-top-upper-upper">
+                                <div><p class="acquisition-type">Click & Collect</p></div>
+                                <div><p class="acquisition-type">Choose your Store</p></div>
+                            </div>
+                            </div>
+                        <div class="cart-container-top-upper">
+                            <div class="check"><input type="checkbox"></div>
+                            <div class="cart-container-top-upper-lower">
+                                <div><p class="acquisition-type">Standard Delivery</p></div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="promoBar-container">
+                    <h4 class="applycode">Apply promo code</h4>
+                    <div class="promoBar">
+                        <input type="text" class="promoText"> 
+                        <button class="applyPromo">Apply</button>
+                    </div>
+                    </div>
+                    <div class="club-text-container">
+                        <h4>sign up to Market club for FREE and get up to $26 off every month!</h4> <h6>ts and cs apply</h6>
+                        <img class="marketPic" src="C:\Users\popkorn\Desktop\Assessment cs1.2\Photos\mkc.JPG">
+                    </div>
+                        <div class = "cart-container-bottom">
+                                <div class="price-description">
+                                    <ul>
+                                        <li>Subtotal:</li>
+                                        <li>Delivery:</li>
+                                        <li>Total:</li>
+                                    </ul>
+                                </div>
+                                <div class="price-list">
+                                    <ul>
+                                        <li>$150.87</li>
+                                        <li>$7.99</li>
+                                        <li>$158.86</li>
+                                    </ul>
+                                </div>
+                    </div>
+                    <button class="proceed-checkout"><b>Proceed to checkout</b></button>
+                </div>
+            </div>
+        </div> 
+    </body>
+</html>
