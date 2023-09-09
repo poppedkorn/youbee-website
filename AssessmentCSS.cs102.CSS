@@ -1,14 +1,182 @@
+/* Imported */
+.fa {
+  width: 60px;
+  height: 50px;
+  font-size: 48px;
+  /* position: relative;
+  overflow: hidden; */
+  /* margin-left: 35px; */
+  /* margin-bottom: 0px; */
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  /* background-color: yellow; */
+}
+
+/* Header */
+.header {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  flex-direction: row;
+  background-color: #cc0404;
+
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.header-nav-button {
+  /* padding: 30px 16px; */
+  font-size: 17px;
+  flex: 4;
+}
+
+.header-home-button {
+  flex: 20;
+  height: 120px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  /* background-color: cyan; */
+}
+
+.header-home-button img {
+  width: 400px;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+}
+
+.header-search {
+  flex: 10;
+  position: relative;
+  display: flex;
+  height: 120px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  /* background-color: black; */
+  margin-right: 100px;
+}
+
+.header-search-button {
+  position: absolute;
+  left: 0;
+  text-indent: -999px;
+  overflow: hidden;
+  width: 40px;
+  padding: 0;
+  margin: 0;
+  border: 1px solid transparent;
+  border-radius: inherit;
+  background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat center;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.header-search-input {
+  height: 50px;
+  width: 500px;
+  color: rgb(0, 0, 0);
+  font-family: "Times New Roman", Times, serif;
+  font-size: 17px;
+  border-radius: 30px;
+  border-color: white;
+  border-style: inset;
+  text-indent: 40px;
+  padding-right: 15px;
+}
+
+.header-search-input:focus {
+  border-style: outset;
+  outline: 0px;
+}
+
+.header-menu {
+  flex: 15;
+  height: 120px;
+  display: flex;
+  /* background-color: blue; */
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+}
+
+.header-menu-item {
+  display: flex;
+  width: 60px;
+  /* background-color: pink; */
+  height: 80px;
+  flex-direction: column;
+}
+
+.header-menu-item-icon {
+  flex: 1;
+  /* background-color: purple; */
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  justify-content: center;
+  padding-top: 7px;
+}
+
+.header-menu-item-label {
+  flex: 1;
+  /* background-color: green; */
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  justify-content: center;
+}
+
+.header-menu-item-label-text {
+  /* padding: 30px 16px; */
+  font-size: 17px;
+  align-content: center;
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+  /* background-color: pink; */
+}
+
+.header-spacer {
+  /* padding: 30px 16px; */
+  flex: 10;
+  height: 120px;
+  /* background-color: black; */
+}
+
+.header-bottom-bar {
+  overflow: hidden;
+  /* background-color: linear-gradient(180deg, #910000, #c20000); */
+  background-color: #b30404;
+  vertical-align: "middle";
+  /* float: "middle"; */
+  height: 60px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center;
+  align-items: center;
+  align-content: center;
+  align-self: center; */
+}
+
+
 
 body {
     margin: 0;
     font-family: 'Times New Roman', Times, serif;
   }
 
-  .tab {
-    /* padding: 30px 16px; */
-    font-size: 17px;
-    flex: 4;
-  }
 
   .overlay {
     /* Height & width depends on how you want to reveal the overlay */   
@@ -170,7 +338,7 @@ body {
     flex-direction: row;
     justify-content: space-around;    
   }
-  
+
   .login-btn:active:hover {
     border-style: outset;
     outline: 0px;
@@ -234,88 +402,9 @@ body {
   justify-content: space-evenly;
 }
 
-.navigation-bar {
-  width: 100%;
-  height: 120px;
-  display: flex;
-  flex-direction: row;
-  background-color: #cc0404;
-
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-}
-
-.topnav-botbar {
-  overflow: hidden;
-  /* background-color: linear-gradient(180deg, #910000, #c20000); */
-  background-color: #b30404;
-  vertical-align: "middle";
-  /* float: "middle"; */
-  height: 60px;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  /* justify-content: center;
-  align-items: center;
-  align-content: center;
-  align-self: center; */
-}
-
 .menu2 {
   flex: 5;
   font-size: 17px;
-}
-
-.home2 {
-  flex: 20;
-  height: 120px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  align-content: center;
-  align-self: center;
-  /* background-color: cyan; */
-}
-
-.home2 img {
-  width: 400px;
-  height: 100px;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  align-self: center;
-}
-
-.search-container {
-  flex: 10;
-  position: relative;
-  display: flex;
-  height: 120px;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  align-self: center;
-  /* background-color: black; */
-  margin-right: 100px;
-}
-
-.input-search2 {
-  height: 50px;
-  width: 500px;
-  color: rgb(0, 0, 0);
-  font-family: "Times New Roman", Times, serif;
-  font-size: 17px;
-  border-radius: 30px;
-  border-color: white;
-  border-style: inset;
-  text-indent: 40px;
-  padding-right: 15px;
-}
-
-.input-search2:focus {
-  border-style: outset;
-  outline: 0px;
 }
 
 .input-search:hover {
@@ -328,81 +417,6 @@ body {
   outline: none;
   border-color: white;
 }
-
-.outer-container2 {
-  flex: 15;
-  height: 120px;
-  display: flex;
-  /* background-color: blue; */
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  align-content: center;
-  align-self: center;
-}
-
-.icon-title-container2 {
-  display: flex;
-  width: 60px;
-  /* background-color: pink; */
-  height: 80px;
-  flex-direction: column;
-}
-
-.fa-container {
-  flex: 1;
-  /* background-color: purple; */
-  align-items: center;
-  align-content: center;
-  align-self: center;
-  justify-content: center;
-  padding-top: 7px;
-
-}
-
-.tab-text-container {
-  flex: 1;
-  /* background-color: green; */
-  align-items: center;
-  align-content: center;
-  align-self: center;
-  justify-content: center;
-}
-
-.empty-space2 {
-  /* padding: 30px 16px; */
-  flex: 10;
-  height: 120px;
-  /* background-color: black; */
-}
-
-.fa {
-  width: 60px;
-  height: 50px;
-  font-size: 48px;
-  /* position: relative;
-  overflow: hidden; */
-  /* margin-left: 35px; */
-  /* margin-bottom: 0px; */
-  color: white;
-  text-decoration: none;
-  text-align: center;
-  /* background-color: yellow; */
-}
-
-.tab-text2 {
-  /* padding: 30px 16px; */
-  font-size: 17px;
-  align-content: center;
-  color: #f2f2f2;
-  text-align: center;
-  text-decoration: none;
-  /* background-color: pink; */
-  
-
-}
-
-
 
 .top-row {
   display: flex;
@@ -422,19 +436,4 @@ body {
 .bot-row a {
     flex: 1;
 
-}
-
-.submit_thing {
-  position: absolute;
-  left: 0;
-  text-indent: -999px;
-  overflow: hidden;
-  width: 40px;
-  padding: 0;
-  margin: 0;
-  border: 1px solid transparent;
-  border-radius: inherit;
-  background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat center;
-  cursor: pointer;
-  opacity: 0.7;
 }
