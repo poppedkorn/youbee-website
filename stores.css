@@ -1,10 +1,13 @@
 ul {
     list-style: none;
-    
+    padding-left: 75px;
+    padding-top: 0;
+    margin-top: 0;
   }
 
   li {
-    margin: 48px 0;
+    margin-bottom: 25px;
+    margin-top: 0;
     font-size:x-large;
   }
 
@@ -12,10 +15,9 @@ ul {
     display:flex;
     flex-direction:row;
     justify-content:space-between;
-    height: calc(100% - 180px);
-    width:100%;
+    height: calc(100vh - 180px);
+    width: 100vw;
     /* background-color: yellow; */
-    align-items: flex-end;
   }
 
   .store-locator-list {
@@ -33,12 +35,22 @@ ul {
     flex:3;
     justify-content: space-around;
     align-self: center;
+    height: calc(100vh - 180px);
   }
 
 
   .find {
     display:flex;
-    text-align: center;
-    align-content: center;
-    align-self: center;
+    text-align: left;
+    align-content: left;
+    align-self: left;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 0;
+    margin-left: 50px;
+  }
+
+  .map-view {
+    display: flex;
+    flex-grow: 1;
   }
