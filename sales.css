@@ -29,19 +29,28 @@
     display: flex;
     width: 100vw;
     flex-direction: row;
-    justify-content: space-evenly;
   }
   
   .header-menu1-item {
     display: flex;
-    flex-grow: 1;
-    align-items: center;
-    background-color: blueviolet;
+    flex: 1;
     flex-direction: column;
   }
   
   .header-menu1-item-icon {
-    /* flex-grow: 1; */
+    flex-grow: 1;
+
+    display: flex;
+    background-color: blueviolet;
+
+  }
+
+  .test {
+    display: flex;
+
+    flex-grow: 1;
+    flex-shrink: 1;
+
   }
   
   .header-menu1-item-label {
