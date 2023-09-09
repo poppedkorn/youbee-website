@@ -4,16 +4,20 @@ function openNav() {
   
   /* Close when someone clicks on the "x" symbol inside the overlay */
   function closeNav() {
-    document.getElementById("myNav").style.width = "0%";
+    document.getElementById("myNav").style.width = "0vw";
   }
 
   function openLogin() {
+    if (document.getElementById("loginPage").style.width == "20vw") {
+      closeLogin()
+      return
+    }
     document.getElementById("loginPage").style.width = "20vw";
   }
   
   /* Close when someone clicks on the "x" symbol inside the overlay */
   function closeLogin() {
-    document.getElementById("loginPage").style.width = "0%";
+    document.getElementById("loginPage").style.width = "0vw";
   }
 
   function unfade(element) {
