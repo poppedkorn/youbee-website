@@ -54,3 +54,7 @@ ul {
     display: flex;
     flex-grow: 1;
   }
+
+  .city-text {
+    margin-left: 25px;
+  }
