@@ -194,8 +194,8 @@ body {
   border-right-style: solid;
 }
 
-  /* Position the content inside the overlay */
-  .nav-overlay-content {
+/* Position the content inside the overlay */
+.nav-overlay-content {
   position: relative;
   top: 10%; /* 25% from the top */
   float: left;
@@ -204,7 +204,7 @@ body {
   margin-top: 10px; /* 30px top margin to avoid conflict with the close button on smaller screens */
 }
 
-/*   The navigation links inside the overlay */
+/* The navigation links inside the overlay */
 .nav-overlay a {
   padding: 6px;
   text-decoration: none;
@@ -288,13 +288,13 @@ body {
 }
 
 .login-input-label {
-  width: 330px;
+  width: calc(10vw - 20px);
   align-self: center; 
   font-weight: bold;
 }
 
 .login-input-text {
-  width: 350px;
+  width: 10vw;
   height: 80px;
   border-radius: 30px;
   border-color: white;
@@ -312,7 +312,7 @@ body {
 }
 
 .login-button-container {
-  width: 330px;
+  width: calc(10vw - 20px);
   height: 100px;
   display: flex;
   align-self: center; 
