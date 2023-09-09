@@ -97,10 +97,6 @@
     background-color: black;
 }
 
-/* .leftside-bottom-container {
-
-} */
-
 .review-box {
     border-style: solid;
     border-width: 1px;
@@ -115,23 +111,27 @@
 
 .review-user {
     margin-bottom: 0;
+    margin-top: 13px;
 }
 
 .rbox-text {
     padding-top: 0;
     margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.review-box-username-container {
+    display: flex;
+    flex-direction: row;
 }
 
 .stars-container {
     display:flex;
     flex-direction: row;
     margin-left: 140px;
-    /* margin-bottom: -50px; */
-}
-
-#size-img {
-    margin-top: 11px;
-    margin-left: 100px;
+    margin-bottom: 80px;
+    padding: 0px;
+    margin-top: 0px;
 }
 
 #review-text {
@@ -181,4 +181,9 @@
 #jacket-image {
     height: 250px;
     width: 230px;
+}
+
+#size-img {
+    margin-top: 11px;
+    margin-left: 100px;
 }
