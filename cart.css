@@ -1,5 +1,5 @@
 .cart-root {
-  height: 100%;
+  height: calc(100vh - 180px);
   width: 100%;
   position: absolute;
   left: 0;
@@ -13,7 +13,7 @@
 
 .cart-page {
   display: flex;
-  height: calc(100% - 180px);
+  height: calc(100vh - 180px);
   width: 100%;
   /* background-color: green; */
   justify-content: space-between;
