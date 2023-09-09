@@ -24,11 +24,6 @@ ul {
     font-family:Arial, Helvetica, sans-serif;
   }
 
-  .blank {
-    style: none;
-    border:none;
-  }
-
   table {
     /* margin-bottom:15px; */
     background-color: white;
