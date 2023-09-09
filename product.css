@@ -19,7 +19,7 @@
     align-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 60px;
+    margin-top: 30px;
     padding-top: 20px;
 }
 
@@ -28,8 +28,12 @@
     padding-left: 15px;
     padding-right: 15px;
     margin-left: 100px;
-    margin-top: 60px;
-    padding-bottom: 10px;
+    margin-top: 30px;
+    /* padding-bottom: 10px; */
+}
+
+.size-selector {
+    margin-left:80px
 }
 
 #price-button-container {
@@ -68,7 +72,8 @@
 #colour-box-container {
     display: flex;
     flex-direction: row;
-    align-self: right;
+    margin-left: 180px;
+
 }
 
 .box-with-colour {
@@ -77,7 +82,7 @@
     width:15px;
     height:15px;
     border-color: black;
-    align-content: flex-end;
+    margin-right: 20px;
 }
 
 #colour-box-beige {
@@ -135,18 +140,18 @@
 }
 
 .full-stars {
-    color: yellow;
+    color: rgb(223, 200, 0);
     margin-top:15px;
 }
 
 .half-stars {
-    color: yellow;
+    color: rgb(223, 200, 0);
     margin-top:15px;
 
 }
 
 .empty-stars {
-    color: yellow;
+    color: rgb(223, 200, 0);
     margin-top:15px;
 
 }
