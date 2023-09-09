@@ -1,5 +1,8 @@
 .product-page {
-    display:flex;
+    height: calc(100vh - 180px);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
 }
 
@@ -11,18 +14,47 @@
 
 .jacket-image-container {
     background-color: #dedede;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 100px;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
 }
 
 .jacket-description-container {
     background-color: #dedede;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 100px;
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+
+#product-button {
+    align-items: center;
+    align-self: center; 
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 30px;
+    border-color: white;
+    border-style: inset;
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    font-weight: bold;
+    font-family: "Times New Roman", Times, serif;
 }
 
 .leftside-top-container {
     display:flex;
     flex-direction: row;
+    justify-content: space-evenly;
 }
 
-#description-jacket {
+#jacket-image {
     height: 220px;
     width: 200px;
 }
@@ -34,8 +66,8 @@
 }
 
 .box-with-colour {
-    width:10px;
-    height:10px;
+    width:15px;
+    height:15px;
     border-color: black;
 }
 
@@ -51,23 +83,26 @@
     background-color: black;
 }
 
-.leftside-bottom-container {
+/* .leftside-bottom-container {
 
-}
+} */
 
 .review-box {
     border-style: solid;
     border-width: 1px;
     border-color: black;
-    background-color: pink;
+    /* background-color: pink; */
     margin-top: -1px;
     padding-left: 15px;
     padding-right: 15px;
+    margin-left: 30px;
+    margin-bottom: 10px;
 }
 
 .stars-container {
     display:flex;
     flex-direction: row;
+    margin-left: 150px;
 }
 
 .full-stars {
