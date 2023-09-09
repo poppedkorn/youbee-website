@@ -16,7 +16,6 @@
     background-color: #dedede;
     padding-left: 15px;
     padding-right: 15px;
-    margin-left: 100px;
     align-content: center;
     align-items: center;
     text-align: center;
@@ -104,15 +103,30 @@
     /* background-color: pink; */
     margin-top: -1px;
     padding-left: 15px;
-    padding-right: 15px;
+    padding-right: 250px;
     margin-left: 30px;
     margin-bottom: 10px;
+}
+
+.review-user {
+    margin-bottom: 0;
+}
+
+.rbox-text {
+    padding-top: 0;
+    margin-top: 0;
 }
 
 .stars-container {
     display:flex;
     flex-direction: row;
     margin-left: 140px;
+    /* margin-bottom: -50px; */
+}
+
+#size-img {
+    margin-top: 11px;
+    margin-left: 100px;
 }
 
 #review-text {
@@ -137,17 +151,29 @@
 
 }
 
+#jacket-cart-container {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    /* text-align: center; */
+    /* justify-content: space-around; */
+}
+
 .rightside-container {
-    padding: 0px 100px;
+    padding: 0px 60px;
     background-color: #dedede;
+    display: flex;
+    flex-direction: column;
 }
 
 #cart-jacket {
-    height: 220px;
-    width: 200px;
+    height: 125px;
+    width: 118px;
+    padding-right: 20px;
 }
 
 #jacket-image {
-    height: 220px;
-    width: 200px;
+    height: 250px;
+    width: 230px;
 }
