@@ -1,6 +1,6 @@
 .product-page {
     height: calc(100vh - 180px);
-    width: 100%;
+    width: 100vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -14,26 +14,28 @@
 
 .jacket-image-container {
     background-color: #dedede;
-    padding-left: 15px;
-    padding-right: 15px;
+    /* padding-left: 15px;
+    padding-right: 15px; */
+    padding-left: 1.25vw;
+    padding-right: 1.25vw;
     align-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 30px;
-    padding-top: 20px;
+    margin-top: 3vh;
+    padding-top: 2vh;
 }
 
 .jacket-description-container {
     background-color: #dedede;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: 100px;
-    margin-top: 30px;
+    padding-left: 1.25vw;
+    padding-right: 1.25vw;
+    margin-left: 8vw;
+    margin-top: 3vh;
     /* padding-bottom: 10px; */
 }
 
 .size-selector {
-    margin-left:80px
+    margin-left:6.5vw
 }
 
 #price-button-container {
@@ -46,8 +48,8 @@
     align-items: center;
     align-self: right; 
     /* padding: 5px; */
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 1vw;
+    padding-right: 1vw;
     border-radius: 30px;
     border-color: white;
     /* border-style: inset; */
@@ -58,8 +60,8 @@
     margin-bottom: 0;
     font-weight: bold;
     font-family: "Times New Roman", Times, serif;
-    margin-top: 28px;
-    margin-left: 10px;
+    margin-top: 2.5vh;
+    margin-left: 0.82vw;
 }
 
 .leftside-top-container {
@@ -72,7 +74,7 @@
 #colour-box-container {
     display: flex;
     flex-direction: row;
-    margin-left: 180px;
+    margin-left: 12vw;
 
 }
 
@@ -103,10 +105,10 @@
     border-color: black;
     /* background-color: pink; */
     margin-top: -1px;
-    padding-left: 15px;
-    padding-right: 250px;
-    margin-left: 30px;
-    margin-bottom: 10px;
+    padding-left: 1vw;
+    padding-right: 20.8vw;
+    margin-left: 1.8vw;
+    margin-bottom: 1vh;
 }
 
 .review-user {
@@ -128,8 +130,8 @@
 .stars-container {
     display:flex;
     flex-direction: row;
-    margin-left: 140px;
-    margin-bottom: 80px;
+    margin-left: 10vw;
+    margin-bottom: 10vh;
     padding: 0px;
     margin-top: 0px;
 }
@@ -166,7 +168,7 @@
 }
 
 .rightside-container {
-    padding: 0px 60px;
+    padding: 0px 4.5vw;
     background-color: #dedede;
     display: flex;
     flex-direction: column;
