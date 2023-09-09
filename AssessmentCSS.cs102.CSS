@@ -278,7 +278,7 @@ body {
   display: flex;
   flex-direction: column;
   align-self: center;
-  }
+}
 
 .login-input-container {
   height: 100px;
@@ -363,7 +363,6 @@ body {
   /* align-items: center;
   align-content: center;
   align-self: center; */
-  padding-top: 75px;
   /* padding-left: 50px; */
   /* background-color: pink; */ 
 }
