@@ -164,17 +164,16 @@ body {
     font-family: "Times New Roman", Times, serif;
   }
 
-<<<<<<< Updated upstream
   .outer-images-container {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;    
-=======
+  }
+  
   .login-btn:active:hover {
     border-style: outset;
     outline: 0px;
->>>>>>> Stashed changes
   }
 
   /* Pretty cool that you can assign properties to two simultaneously */
