@@ -16,12 +16,11 @@
     </head>
     <body>
             
-      <div id="myNav" class="overlay">
+      <div id="myNav" class="nav-overlay">
 
-        <!-- Button to close the overlay navigation -->
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="javascript:void(0)" class="nav-close-button" onclick="closeNav()">&times;</a>
       
-        <div class="overlay-content">
+        <div class="nav-overlay-content">
           <a href="#">Fathers Day Sales</a>
           <a href="#">Clothing & Accesories</a>
           <a href="#">Home & Appliances</a>
@@ -36,28 +35,28 @@
           <a href="#">Specials</a>
           <a href="#">Online Only</a>
         </div>
+
       </div>
 
-      <div id="loginPage" class="overlay_login">
+      <div id="loginPage" class="login-overlay">
 
-        <a href="javascript:void(0)" class="closebtn_login" onclick="closeLogin()">&times;</a>
+        <a href="javascript:void(0)" class="login-close-button" onclick="closeLogin()">&times;</a>
 
-        <div class="overlayContentLogin">
-
-          <div class="login-container">
-            <div class="username-email-password">
+        <div class="login-overlay-content">
+          <div class="login-input-container">
+            <div class="login-input-label">
               <p style="text-align: left;">Username or Email</p>
             </div>
-            <input class="sign-in" type="email">
+            <input class="login-input-text" type="email">
           </div>
-          <div class="login-container">
-            <div class="username-email-password">
+          <div class="login-input-container">
+            <div class="login-input-label">
               <p style="text-align: left;">Password</p>
             </div>            
-            <input class="sign-in" type="password">
+            <input class="login-input-text" type="password">
           </div>
-          <div class="login-btn-container">
-            <button class="login-btn">Login</button>
+          <div class="login-button-container">
+            <button class="login-button">Login</button>
           </div>
         </div>
       </div>
@@ -122,39 +121,32 @@
       </div>
       <div class="header-bottom-bar"></div>
 
-      <div class="content">
-        <div class="outer-images-container">
-          <a href="sales-page.html" class="specialsPicture"> <img src="Photos/categ.JPG" 
-              alt="Specials" 
-              width="250" 
-              height="250" 
-              style="border-radius: 125px;">
-            </a>
-
-          <a href="#"> <img src="Photos/categ5.JPG" 
-            alt="Food-&-Snacks" 
-            width="250" 
-            height="250">
+      <div class="home-content">
+        
+        <div class="home-images-container">
+          <a href="sales-page.html" class="specialsPicture"> 
+            <img class="specialsPicture" src="Photos/categ.JPG" alt="Specials" style="border-radius: 125px;">
           </a>
 
-            <a href="#"> <img src="Photos/categ7.JPG" 
-            alt="Electronics" 
-            width="250" 
-            height="250">
+          <a href="#">
+            <img class="specialsPicture" src="Photos/categ5.JPG" alt="Food-&-Snacks">
           </a>
 
-          <a href="#Jacket"><img src="Photos/categ6.JPEG" 
-            alt="Clothing" 
-            width="250" 
-            height="250">
+          <a href="#">
+              <img class="specialsPicture" src="Photos/categ7.JPG" alt="Electronics">
+          </a>
+
+          <a href="#Jacket">
+            <img class="specialsPicture"src="Photos/categ6.JPEG" alt="Clothing">
           </a>
         </div>
         
-        <div class="banner">
-        <a href="#specials"><img src= "Photos/salesBanner.JPG" 
-          alt="Sales-Banner">
-        </a>
+        <div class="home-bottom-banner">
+          <a href="#specials">
+            <img src= "Photos/salesBanner.JPG" alt="Sales-Banner">
+          </a>
         </div>
+
       </div>
     </body>
 </html>
