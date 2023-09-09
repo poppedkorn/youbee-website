@@ -1,5 +1,5 @@
 function openNav() {
-    document.getElementById("myNav").style.width = "20%";
+    document.getElementById("myNav").style.width = "20vw";
   }
   
   /* Close when someone clicks on the "x" symbol inside the overlay */
@@ -8,7 +8,7 @@ function openNav() {
   }
 
   function openLogin() {
-    document.getElementById("loginPage").style.width = "18%";
+    document.getElementById("loginPage").style.width = "20vw";
   }
   
   /* Close when someone clicks on the "x" symbol inside the overlay */

@@ -1,169 +1,26 @@
+/* Imported */
+.fa {
+  width: 60px;
+  height: 50px;
+  font-size: 48px;
+  /* position: relative;
+  overflow: hidden; */
+  /* margin-left: 35px; */
+  /* margin-bottom: 0px; */
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  /* background-color: yellow; */
+}
 
+/* Body */
 body {
-    margin: 0;
-    font-family: 'Times New Roman', Times, serif;
-  }
-
-  .tab {
-    /* padding: 30px 16px; */
-    font-size: 17px;
-    flex: 4;
-  }
-
-  .overlay {
-    /* Height & width depends on how you want to reveal the overlay */   
-    height: 100%;
-    width: 0;
-    position: fixed; /* Stay in place */
-    z-index: 20; /* Sit on top */
-    left: 0;
-    top: 180px;
-    background-color: #DEDEDE; /* Black fallback color */
-    background-color: #DEDEDE; /* Black w/opacity */
-    overflow-x: hidden; /* Disable horizontal scroll */
-    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
-  }
-  
-  /* Position the content inside the overlay */
-  .overlay-content {
-    position: relative;
-    top: 10%; /* 25% from the top */
-    float: left;
-    margin-left: 25px;
-    text-align: left; /* Centered text/links */
-    margin-top: 10px; /* 30px top margin to avoid conflict with the close button on smaller screens */
-  }
-  
-  /* The navigation links inside the overlay */
-  .overlay a {
-    padding: 6px;
-    text-decoration: none;
-    font-size: 17px;
-    font-family: 'Times New Roman', Times, serif;
-    /* font-size: 36px; */
-    color: #000000;
-    display: block; /* Display block instead of inline */
-    transition: 0.3s; /* Transition effects on hover (color) */
-  }
-  
-  /* When you mouse over the navigation links, change their color */
-  .overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
-  }
-  
-  /* Position the close button (top right corner) */
-  .overlay .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
-  }
-  
-  /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
-  @media screen and (max-height: 450px) {
-    .overlay a {font-size: 20px}
-    .overlay .closebtn {
-      font-size: 40px;
-      top: 15px;
-      right: 35px
-    }
-  }
-
-  .overlay_login {
-    /* Height & width depends on how you want to reveal the overlay */   
-    height: 100%;
-    width: 0;
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    right: 0;
-    top: 180px;
-    background-color: #DEDEDE; /* Black fallback color */
-    background-color: #DEDEDE; /* Black w/opacity */
-    overflow-x: hidden; /* Disable horizontal scroll */
-    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
-  }
-
-  /* Position the content inside the overlay */
-  .overlayContentLogin {
-    /* position: relative; */
-    top: 25%; /* 25% from the top */
-    /* float: right; */
-    margin-left: 25px;
-    text-align: center; /*Centered text/links*/
-    margin-top: 200px; /* 30px top margin to avoid conflict with the close button on smaller screens */
-    display: flex;
-    /* justify-content: left; */
-    flex-direction: column;
-    }
-  
-  /* The navigation links inside the overlay */
-  .overlay_login a {
-    padding: 6px;
-    text-decoration: none;
-    font-size: 17px;
-    font-family: 'Times New Roman', Times, serif;
-    /* font-size: 36px; */
-    color: #000000;
-    display: block; /* Display block instead of inline */
-    transition: 0.3s; /* Transition effects on hover (color) */
-  }
-  
-  /* Position the close button (top right corner) */
-  .overlay_login .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
-  }
-
-  .login-btn {
-    height: 30px;
-    width: 60px;
-    color: rgb(0, 0, 0);
-    font-family: "Times New Roman", Times, serif;
-    font-size: 17px;
-    border-radius: 30px;
-    /* border-color: white; */
-    /* display: flex; */
-    /* justify-content: space-around; */
-  }
-  
-  /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
-  @media screen and (max-height: 450px) {
-    .overlay_login a {font-size: 20px}
-    .overlay_login .closebtn_login {
-      font-size: 40px;
-      top: 15px;
-      right: 35px
-    }
-  }
-
-  .outer-images-container {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    /* align-items: center;
-    align-content: center;
-    align-self: center; */
-    padding-top: 75px;
-    /* padding-left: 50px; */
-    /* background-color: pink; */
-    
-  }
-
-.banner {
-  width: 100%;
-  margin-top: 75px;
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
 }
 
-.banner img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.navigation-bar {
+/* Header */
+.header {
   width: 100%;
   height: 120px;
   display: flex;
@@ -175,7 +32,135 @@ body {
   align-content: center;
 }
 
-.topnav-botbar {
+.header-nav-button {
+  /* padding: 30px 16px; */
+  font-size: 17px;
+  flex: 4;
+}
+
+.header-home-button {
+  flex: 20;
+  height: 120px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  /* background-color: cyan; */
+}
+
+.header-home-button img {
+  width: 400px;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+}
+
+.header-search {
+  flex: 10;
+  position: relative;
+  display: flex;
+  height: 120px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  /* background-color: black; */
+  margin-right: 100px;
+}
+
+.header-search-button {
+  position: absolute;
+  left: 0;
+  text-indent: -999px;
+  overflow: hidden;
+  width: 40px;
+  padding: 0;
+  margin: 0;
+  border: 1px solid transparent;
+  border-radius: inherit;
+  background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat center;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.header-search-input {
+  height: 50px;
+  width: 500px;
+  color: rgb(0, 0, 0);
+  font-family: "Times New Roman", Times, serif;
+  font-size: 17px;
+  border-radius: 30px;
+  border-color: white;
+  border-style: inset;
+  text-indent: 40px;
+  padding-right: 15px;
+}
+
+.header-search-input:focus {
+  border-style: outset;
+  outline: 0px;
+}
+
+.header-menu {
+  flex: 15;
+  height: 120px;
+  display: flex;
+  /* background-color: blue; */
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+}
+
+.header-menu-item {
+  display: flex;
+  width: 60px;
+  /* background-color: pink; */
+  height: 80px;
+  flex-direction: column;
+}
+
+.header-menu-item-icon {
+  flex: 1;
+  /* background-color: purple; */
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  justify-content: center;
+  padding-top: 7px;
+}
+
+.header-menu-item-label {
+  flex: 1;
+  /* background-color: green; */
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  justify-content: center;
+}
+
+.header-menu-item-label-text {
+  /* padding: 30px 16px; */
+  font-size: 17px;
+  align-content: center;
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+  /* background-color: pink; */
+}
+
+.header-spacer {
+  /* padding: 30px 16px; */
+  flex: 10;
+  height: 120px;
+  /* background-color: black; */
+}
+
+.header-bottom-bar {
   overflow: hidden;
   /* background-color: linear-gradient(180deg, #910000, #c20000); */
   background-color: #b30404;
@@ -191,183 +176,211 @@ body {
   align-self: center; */
 }
 
-.sign-in {
-  height: 30px;
-  width: 250px;
-  color: rgb(0, 0, 0);
-  font-family: "Times New Roman", Times, serif;
-  font-size: 17px;
-  border-radius: 30px;
-  border-color: white;
+/* Navigation Overlay */
+.nav-overlay {
+  /* Height & width depends on how you want to reveal the overlay */   
+  height: 100%;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 20; /* Sit on top */
+  left: 0;
+  top: 180px;
+  background-color: #DEDEDE; /* Black fallback color */
+  background-color: #DEDEDE; /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  border-right-color: #ABABAB;
+  border-right-width: 2px;
+  border-right-style: solid;
 }
 
-.menu2 {
-  flex: 5;
-  font-size: 17px;
-}
-
-.home2 {
-  flex: 20;
-  height: 120px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  align-content: center;
-  align-self: center;
-  /* background-color: cyan; */
-}
-
-.home2 img {
-  width: 400px;
-  height: 100px;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  align-self: center;
-}
-
-.search-container {
-  flex: 10;
+  /* Position the content inside the overlay */
+  .nav-overlay-content {
   position: relative;
-  display: flex;
-  height: 120px;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  align-self: center;
-  /* background-color: black; */
-  margin-right: 100px;
+  top: 10%; /* 25% from the top */
+  float: left;
+  margin-left: 25px;
+  text-align: left; /* Centered text/links */
+  margin-top: 10px; /* 30px top margin to avoid conflict with the close button on smaller screens */
 }
 
-.input-search2 {
-  height: 50px;
-  width: 500px;
-  color: rgb(0, 0, 0);
-  font-family: "Times New Roman", Times, serif;
+/*   The navigation links inside the overlay */
+.nav-overlay a {
+  padding: 6px;
+  text-decoration: none;
   font-size: 17px;
+  font-family: 'Times New Roman', Times, serif;
+  /* font-size: 36px; */
+  color: #000000;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.nav-overlay a:hover, .nav-overlay a:focus {
+  color: #ABABAB;
+}
+
+/* Position the close button (top right corner) */
+.nav-overlay .nav-close-button {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+/* Login Overlay */
+.login-overlay {
+  /* Height & width depends on how you want to reveal the overlay */   
+  height: calc(100vh - 180px);
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  right: 0;
+  top: 180px;
+  background-color: #DEDEDE; /* Black fallback color */
+  background-color: #DEDEDE; /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  border-left-color: #ABABAB;
+  border-left-width: 2px;
+  border-left-style: solid;
+  display: flex;
+}
+
+/* The navigation links inside the overlay */
+.login-overlay a {
+  width: 0;
+  text-decoration: none;
+  font-size: 70px;
+  padding-left: 15px;
+  font-family: 'Times New Roman', Times, serif;
+  color: #000000;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.login-overlay a:hover, .login-overlay a:focus {
+  color: #ABABAB;
+}
+
+/* Position the close button (top right corner) */
+.login-overlay .login-close-button {
+  font-size: 60px;
+}
+
+/* Position the content inside the overlay */
+.login-overlay-content {
+  width: calc(20vw - 40px);
+  height: 300px;
+  top: 25%;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  }
+
+.login-input-container {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-self: center; 
+}
+
+.login-input-label {
+  width: 330px;
+  align-self: center; 
+  font-weight: bold;
+}
+
+.login-input-text {
+  width: 350px;
+  height: 80px;
   border-radius: 30px;
   border-color: white;
-  text-indent: 40px;
-  padding-right: 15px;
+  border-style: inset;
+  color: rgb(0, 0, 0);
+  font-size: 17px;
+  font-family: "Times New Roman", Times, serif;
+  padding-right: 20px;
+  text-indent: 20px;
 }
 
-.input-search:hover {
-  background-color: #fff4f4;
-  color: black;
-  border-color: white;
+.login-input-text:focus {
+  border-style: outset;
+  outline: 0px;
 }
 
-.input-search:focus {
-  outline: none;
-  border-color: white;
-}
-
-.outer-container2 {
-  flex: 15;
-  height: 120px;
+.login-button-container {
+  width: 330px;
+  height: 100px;
   display: flex;
-  /* background-color: blue; */
+  align-self: center; 
+}
+
+.login-button {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-self: center; 
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 30px;
+  border-color: white;
+  border-style: inset;
+  color: rgb(0, 0, 0);
+  font-size: 17px;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* Pretty cool that you can assign properties to two simultaneously */
+/* .login-btn:active:hover, .sign-in:focus {
+  border-style: outset;
+  outline: 0px;
+} */
+
+.login-button:active:hover {
+  border-style: outset;
+  outline: 0px;
+}
+
+/* Home Page Content */
+.home-content {
+  height: calc(100vh - 180px);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.home-images-container {
+  width: 100%;
+  display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: center;
+  /* align-items: center;
   align-content: center;
-  align-self: center;
+  align-self: center; */
+  padding-top: 75px;
+  /* padding-left: 50px; */
+  /* background-color: pink; */ 
 }
 
-.icon-title-container2 {
-  display: flex;
-  width: 60px;
-  /* background-color: pink; */
-  height: 80px;
-  flex-direction: column;
-}
-
-.fa-container {
-  flex: 1;
-  /* background-color: purple; */
-  align-items: center;
-  align-content: center;
-  align-self: center;
+.home-bottom-banner {
   justify-content: center;
-  padding-top: 7px;
-
-}
-
-.tab-text-container {
-  flex: 1;
-  /* background-color: green; */
-  align-items: center;
-  align-content: center;
-  align-self: center;
-  justify-content: center;
-}
-
-.empty-space2 {
-  /* padding: 30px 16px; */
-  flex: 10;
-  height: 120px;
-  /* background-color: black; */
-}
-
-.fa {
-  width: 60px;
-  height: 50px;
-  font-size: 48px;
-  /* position: relative;
-  overflow: hidden; */
-  /* margin-left: 35px; */
-  /* margin-bottom: 0px; */
-  color: white;
-  text-decoration: none;
-  text-align: center;
-  /* background-color: yellow; */
-}
-
-.tab-text2 {
-  /* padding: 30px 16px; */
-  font-size: 17px;
-  align-content: center;
-  color: #f2f2f2;
-  text-align: center;
-  text-decoration: none;
-  /* background-color: pink; */
-  
-
-}
-
-
-
-.top-row {
   display: flex;
-  justify-content: space-around;
-  
+  width: 100%;
 }
 
-.top-row a {
-  flex: 1;
+.home-bottom-banner img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.bot-row {
-  display: flex;
-  justify-content: space-around;
-}
-
-.bot-row a {
-    flex: 1;
-
-}
-
-.submit_thing {
-  position: absolute;
-  left: 0;
-  text-indent: -999px;
-  overflow: hidden;
-  width: 40px;
-  padding: 0;
-  margin: 0;
-  border: 1px solid transparent;
-  border-radius: inherit;
-  background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat center;
-  cursor: pointer;
-  opacity: 0.7;
+.specialsPicture {
+  width: 250px;
+  height: 250px;
 }
