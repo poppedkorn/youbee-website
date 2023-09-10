@@ -9,19 +9,39 @@
 #left-product {
     display:flex;
     flex-direction: column;
-    justify-content: space-around;
+    /* justify-content: space-around; */
+}
+
+.leftside-top-container {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* background-color: green; */
+}
+
+.stars-container {
+    display:flex;
+    flex-direction: row;
+    margin-left: 8.95vw;
+    margin-bottom: 15vh;
+    padding: 0px;
+    margin-top: 0px;
+    /* background-color: yellow; */
+}
+
+.leftside-bottom-container {
+    /* display:flex; */
+    /* background-color: blue; */
 }
 
 .jacket-image-container {
     background-color: #dedede;
-    /* padding-left: 15px;
-    padding-right: 15px; */
     padding-left: 1.25vw;
     padding-right: 1.25vw;
     align-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 3vh;
+    margin-top: 2.5vh;
     padding-top: 2vh;
 }
 
@@ -30,8 +50,7 @@
     padding-left: 1.25vw;
     padding-right: 1.25vw;
     margin-left: 8vw;
-    margin-top: 3vh;
-    /* padding-bottom: 10px; */
+    margin-top: 2.5vh;
 }
 
 .size-selector {
@@ -64,18 +83,11 @@
     margin-left: 0.82vw;
 }
 
-.leftside-top-container {
-    display:flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
 
 #colour-box-container {
     display: flex;
     flex-direction: row;
     margin-left: 12vw;
-
 }
 
 .box-with-colour {
@@ -103,7 +115,6 @@
     border-style: solid;
     border-width: 1px;
     border-color: black;
-    /* background-color: pink; */
     margin-top: -1px;
     padding-left: 1vw;
     padding-right: 20.8vw;
@@ -114,12 +125,13 @@
 .review-user {
     margin-bottom: 0;
     margin-top: 13px;
+    padding-right: 1vw;
 }
 
 .rbox-text {
     padding-top: 0;
     margin-top: 0;
-    margin-bottom: 5px;
+    margin-bottom: 1vh;
 }
 
 .review-box-username-container {
@@ -127,18 +139,16 @@
     flex-direction: row;
 }
 
-.stars-container {
-    display:flex;
-    flex-direction: row;
-    margin-left: 10vw;
-    margin-bottom: 10vh;
-    padding: 0px;
-    margin-top: 0px;
+.review-stars-container {
+    margin-bottom: 0.3vh;
 }
 
 #review-text {
     padding:none;
-    margin:none;
+    margin-top:none;
+    margin-bottom: none;
+    margin-left: 2.3vw;
+    margin-right: 11.3vw;
 }
 
 .full-stars {
@@ -163,8 +173,6 @@
     flex-direction: row;
     align-content: center;
     align-items: center;
-    /* text-align: center; */
-    /* justify-content: space-around; */
 }
 
 .rightside-container {
