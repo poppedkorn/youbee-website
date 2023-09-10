@@ -36,10 +36,15 @@ function unfade(element) {
 
 /* Product quantity increment functions */
 function increment() {
+  if (document.getElementById('number-hold').value <= 0) {
+    document.getElementById('number-hold').value = 1
+    return
+  }
   document.getElementById('number-hold').stepUp();
 }
 function decrement() {
-  if (document.getElementById('number-hold').value == 1) {
+  if (document.getElementById('number-hold').value <= 1) {
+      document.getElementById('number-hold').value = 1
       return
   }
   document.getElementById('number-hold').stepDown();
