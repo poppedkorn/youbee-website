@@ -231,10 +231,35 @@
 
   .club-text-container {
     background-color: #64dc83;
-    height: 60px;
+    width: 100%;
     display: flex;
     margin-top: 5%;
+    flex-direction: row;
     text-align: center;
+    align-self: flex-start;
+    align-content:center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .tsc {
+    display: flex;
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .green-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: center;
+    justify-content: center;
   }
 
   .promoText {
