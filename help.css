@@ -1,6 +1,6 @@
 ul {
     list-style: none;
-    margin-left: 50px;
+    margin-left: 0;
     padding-left: 0;
   }
 
@@ -32,7 +32,7 @@ ul {
   .help-page {
     display:flex;
     /* width:100%; */
-    height: calc(100vh - 250px);
+    height: calc(100vh - 180px);
     width: 100vw;
     flex-direction: row;
     /* align-items: center; */
@@ -46,17 +46,21 @@ ul {
 
   .help-list-left {
     display:flex;
-    flex: 2;
-    /* height: auto; */
-    align-items: flex-start;
+    flex: 20;
+    align-items: center;
     flex-direction: column;
     justify-content: center;
-    /* background-color: black; */
+    background-color: #c7c7c7;
+  }
+
+  .mid-column {
+    display: flex;
+    flex-direction: column;
   }
 
   .measurement-photos-middle {
     display:flex;
-    flex: 5;
+    flex: 55;
     height: 100%;
     /* margin-left: 50px; */
     flex-direction: column;
@@ -66,14 +70,28 @@ ul {
     align-self: center;
     align-content: center;
     justify-content:center;
+    background-color: #dedede;
+
+  }
+  
+  .bottom-info-container {
+    flex-direction: row;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    /* flex:row; */
+    /* height: 70px; */
+    justify-content: space-evenly;
+    align-self: center;
+    width: 55vw;
   }
 
-  .dummy-div {
+  /* .dummy-div {
     display:flex;
     flex: 1;
-    /* background-color: white; */
+    background-color: cyan ;
     height:auto;
-  }
+  } */
 
   .table-headers {
     margin-top: 0;
@@ -88,51 +106,34 @@ ul {
 
   .promo-link-bar-right {
     display:flex;
-    flex: 2;
+    flex: 25;
     height:auto;
     align-items:center;
     flex-direction: column;
-    background-color:white;
-    justify-content: space-evenly;
+    background-color:#ebebeb;
     border-color: rgba(0, 0, 0, 0.11);
+    padding-bottom: 10vh;
+    padding-top: 10vh;
+    justify-content: space-evenly;
   }
 
 
   .payment-title {
-    display: flex;
-    align-self:flex-start;
-    width:75%;
+    align-self:center;
+    text-align: center;
+    width:80%;
     font-size: 2em;
     font-weight: bold;
     font-family: "Times New Roman", Times, serif;
     /* background-color: blueviolet; */
+    padding-bottom: 5vh;
   }
 
-  .bottom-info-container {
-    display:flex;
-    flex:row;
-    height: 70px;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #dedede;
-    width: 30vw;
-    padding-left: 30vw;
-    padding-right: 20vw;
-
+  .mid-bottom {
+    flex: 20;
   }
 
-  .phone-number-bottom {
-    margin-left: 0px;
-    padding-left: 0px;
-    text-align: left;
-  }
 
-  .info-bottom {
-    margin-left: 0px;
-    padding-left: 0px;
-    text-align: left;
-    justify-self: flex-end;
-  }
 
   .test2 {
     font-size: 1em;
@@ -140,34 +141,46 @@ ul {
   }
   
 .wrapper {
-  height: 20vh;
-  align-items: center;
-  align-content: center;
-  align-self: center;
-  /* background-color: blue; */
+  /* height: 2vh; */
+  align-items: flex-start;
+  align-content: flex-start;
+  align-self: flex-start;
+  justify-content: center;
+  background-color: white;
   width: 100%;
   flex-direction: column;
+  display: flex;
+  padding: 2vh 1vw;
+  border-radius: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 
 .zfm-ads {
-  display: flex;
   flex-direction: row;
+  display: flex;
   justify-content: space-between;
-  /* background-color: blue; */
-  /* width:75%; */
-  align-self: center;
-  align-items: center;
+  align-self: flex-start;
   align-content: center;
+  align-items: center;
   font-size: 2em;
   font-weight: bold;
   font-family: "Times New Roman", Times, serif;
-  /* margin-top: 20px; */
-  
+  /* background-color: aquamarine; */
+  width: 100%;
+  padding-top: 0;
 }
 
+.zfm-ads img {
+  align-self: flex-end;
+}
+
+
+
 .promo-link {
-  align-self:center;
+  align-self:left;
   text-align: left;
   /* margin-bottom: 100px; */
   font-size: 1.5em;
@@ -176,11 +189,12 @@ ul {
 }
 
 .margin-wrapper {
-  width: 80%;
+  width: 20vw;
   /* background-color: blue; */
   display:flex;
   height: 100%;
   align-items:center;
+  align-self: center;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
