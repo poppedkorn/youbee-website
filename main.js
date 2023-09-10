@@ -1,4 +1,8 @@
 function openNav() {
+    if (document.getElementById("myNav").style.width == "20vw") {
+      closeNav()
+      return
+    }
     document.getElementById("myNav").style.width = "20vw";
   }
   
