@@ -36,16 +36,26 @@ function unfade(element) {
 
 /* Product quantity increment functions */
 function increment() {
-  if (document.getElementById('number-hold').value <= 0) {
-    document.getElementById('number-hold').value = 1
-    return
+  const numberHold = document.getElementById('number-hold')
+
+  if (numberHold.value <= 0) {
+    numberHold.value = 1
+  } else {
+    document.getElementById('number-hold').stepUp();
   }
-  document.getElementById('number-hold').stepUp();
+
+  document.getElementById('subtotal').textContent = "$" + (numberHold.value * 150.87).toFixed(2)
+  document.getElementById('total').textContent = "$" + (numberHold.value * 150.87 + 7.99).toFixed(2)
 }
 function decrement() {
-  if (document.getElementById('number-hold').value <= 1) {
-      document.getElementById('number-hold').value = 1
-      return
+  const numberHold = document.getElementById('number-hold')
+
+  if (numberHold.value <= 1) {
+      numberHold.value = 1
+  } else {
+    document.getElementById('number-hold').stepDown();
   }
-  document.getElementById('number-hold').stepDown();
+
+  document.getElementById('subtotal').textContent = "$" + (numberHold.value * 150.87).toFixed(2)
+  document.getElementById('total').textContent = "$" + (numberHold.value * 150.87 + 7.99).toFixed(2)
 }
